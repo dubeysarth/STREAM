@@ -1,0 +1,7 @@
+RMSE,NSE,PBIAS,KGE,split,run_id,dynamic_group,static_group,loss_name,history_length,frequency
+0.953284550437109,0.7708767650723678,9.085443897804415,0.7649775347431352,test,us_daily_lumped_010515_core_hydro_skill_h365_b256,era5_core,static_base,hydro_skill,365,daily
+0.6993407525083799,0.8365462181873835,4.695563661131703,0.8626656123296654,train,us_daily_lumped_010515_core_hydro_skill_h365_b256,era5_core,static_base,hydro_skill,365,daily
+0.8142987848154545,0.7887437230716148,6.083742454973108,0.8101000132639619,val,us_daily_lumped_010515_core_hydro_skill_h365_b256,era5_core,static_base,hydro_skill,365,daily
+1.2139026424442223,0.6352034102701337,23.03348531585436,0.5672283240648758,test,us_daily_semidistributed_010515_core_hydro_skill_h365_gb256,era5_core,static_base,hydro_skill,365,daily
+0.9830297144146458,0.6788655797226089,20.34490833186165,0.6357334412616453,train,us_daily_semidistributed_010515_core_hydro_skill_h365_gb256,era5_core,static_base,hydro_skill,365,daily
+0.9962062713645332,0.6878639443946251,20.31933603310784,0.6347693879672561,val,us_daily_semidistributed_010515_core_hydro_skill_h365_gb256,era5_core,static_base,hydro_skill,365,daily

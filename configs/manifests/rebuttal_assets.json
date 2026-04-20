@@ -1,0 +1,7 @@
+{
+  "dataset_id": "rebuttal_assets",
+  "adapter": "mixed",
+  "notes": {
+    "description": "Result and document index manifest for reviewer-facing asset packaging."
+  }
+}

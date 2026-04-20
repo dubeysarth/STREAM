@@ -1,0 +1,7 @@
+{
+  "dataset_id": "validation_bundle",
+  "adapter": "mixed",
+  "notes": {
+    "description": "Result-bundle manifest for validation summary rendering."
+  }
+}

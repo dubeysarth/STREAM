@@ -1,0 +1,14 @@
+{
+  "dataset_id": "us_monthly_huc_all",
+  "adapter": "camels_us",
+  "benchmark": {
+    "adapter": "camels_us",
+    "experiment_root": "experiments/us_daily_subset",
+    "results_root": "results/us_daily_subset",
+    "frequency": "monthly",
+    "representations": ["lumped", "distributed"]
+  },
+  "notes": {
+    "description": "Monthly CAMELS-US benchmark manifest for the shared STREAM runners."
+  }
+}

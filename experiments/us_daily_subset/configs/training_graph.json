@@ -1,0 +1,18 @@
+{
+  "batch_size": 1,
+  "device": "cpu",
+  "dropout": 0.25,
+  "embedding_dim": 32,
+  "graph_batch_size": 64,
+  "hidden_dim": 256,
+  "history_length": 365,
+  "learning_rate": 0.001,
+  "loss_name": "hydro_skill",
+  "limit_train_batches": null,
+  "max_epochs": 16,
+  "patience": 10,
+  "seed": 42,
+  "static_group": "static_base",
+  "gradient_clip_norm": 1.0,
+  "weight_decay": 0.0001
+}

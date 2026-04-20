@@ -1,0 +1,31 @@
+{
+  "data": {
+    "dataset_name": "03min_GloFAS_CAMELS-US_Ohio",
+    "region": "continental_us",
+    "resolution": "03min",
+    "manifest_path": "configs/manifests/camels_us_03min.json"
+  },
+  "task": {
+    "name": "shared_template",
+    "representation": "distributed",
+    "target": "GloFAS_surrogate"
+  },
+  "model": {
+    "name": "template_model",
+    "checkpoint": "outputs/checkpoints/template_model.pt",
+    "notes": "Use this template as the starting point for lumped or graph-based runs."
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "seed": 42,
+    "compute_budget": "targeted_1_gpu"
+  },
+  "outputs": {
+    "root": "outputs/shared_template",
+    "summary_table": "outputs/shared_template/summary.csv"
+  },
+  "rebuttal": {
+    "mode": "aggressive_best_case",
+    "shared_repo_url": "<SHARED_REPO_URL>"
+  }
+}

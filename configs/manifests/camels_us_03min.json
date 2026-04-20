@@ -1,0 +1,11 @@
+{
+  "dataset_id": "camels_us_03min",
+  "adapter": "camels_us",
+  "legacy": {
+    "reference_root": "reference_materials/STREAM",
+    "resolution": "03min"
+  },
+  "notes": {
+    "description": "Legacy curation and inventory pipeline manifest for 03min CAMELS-US."
+  }
+}

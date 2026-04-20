@@ -1,0 +1,12 @@
+name: stream
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - xarray
+  - h5py
+  - networkx
+  - pytest

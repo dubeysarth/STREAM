@@ -1,0 +1,31 @@
+{
+  "data": {
+    "dataset_name": "reviewer_assets",
+    "region": "n_a",
+    "resolution": "n_a",
+    "manifest_path": "configs/manifests/rebuttal_assets.json"
+  },
+  "task": {
+    "name": "12_build_rebuttal_assets",
+    "representation": "reviewer_text",
+    "target": "markdown_rebuttal"
+  },
+  "model": {
+    "name": "rebuttal_asset_builder",
+    "checkpoint": "outputs/12_rebuttal_assets/not_applicable",
+    "notes": "Assemble reviewer-facing markdown, metric tables, and asset indexes."
+  },
+  "runtime": {
+    "device": "cpu",
+    "seed": 42,
+    "compute_budget": "targeted_1_gpu"
+  },
+  "outputs": {
+    "root": "outputs/12_rebuttal_assets",
+    "summary_table": "outputs/12_rebuttal_assets/rebuttal_asset_index.csv"
+  },
+  "rebuttal": {
+    "mode": "aggressive_best_case",
+    "shared_repo_url": "<SHARED_REPO_URL>"
+  }
+}

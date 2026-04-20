@@ -1,0 +1,31 @@
+{
+  "data": {
+    "dataset_name": "mixed_existing_and_new_evidence",
+    "region": "continental_us_plus_india",
+    "resolution": "monthly_and_zero_shot",
+    "manifest_path": "configs/manifests/validation_bundle.json"
+  },
+  "task": {
+    "name": "11_run_validation_bundle",
+    "representation": "mixed",
+    "target": "reviewer_facing_evidence"
+  },
+  "model": {
+    "name": "validation_bundle",
+    "checkpoint": "outputs/11_validation_bundle/not_applicable",
+    "notes": "Summarize existing artifacts plus targeted monthly comparison outputs."
+  },
+  "runtime": {
+    "device": "cpu",
+    "seed": 42,
+    "compute_budget": "targeted_1_gpu"
+  },
+  "outputs": {
+    "root": "outputs/11_validation_bundle",
+    "summary_table": "outputs/11_validation_bundle/minimal_sufficient_bundle.csv"
+  },
+  "rebuttal": {
+    "mode": "aggressive_best_case",
+    "shared_repo_url": "<SHARED_REPO_URL>"
+  }
+}

@@ -1,0 +1,7 @@
+run_id,dynamic_group,loss_name,history_length,RMSE,NSE,PBIAS,KGE
+ohio_monthly_lumped_hydro_skill_core_h12,era5_core,hydro_skill,12,31.51861970708936,0.3875523154635758,10.053256183594732,0.3763673428596562
+ohio_monthly_lumped_rmse_full_h12,era5_full_selected,rmse,12,31.820583491314583,0.3757610050750222,12.637034704765256,0.4125654408359388
+ohio_monthly_lumped_hydro_skill_core_snow_h12,era5_core_plus_snow,hydro_skill,12,32.0450746614743,0.3669220429609042,12.935028309839955,0.383281321588593
+ohio_monthly_lumped_hydro_skill_full_h12,era5_full_selected,hydro_skill,12,32.35096394187738,0.3547781473176595,16.23390853641799,0.3796019492955638
+ohio_monthly_lumped_hydro_balance_full_h12,era5_full_selected,hydro_balance,12,32.60648330114776,0.3445455148468125,17.98677742479549,0.3638757481329551
+ohio_monthly_lumped_hydro_skill_core_wb_h12,era5_core_plus_water_balance,hydro_skill,12,32.616713565283824,0.3441341534393718,15.890635147459156,0.3810925054111219

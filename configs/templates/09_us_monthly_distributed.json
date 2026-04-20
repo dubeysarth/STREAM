@@ -1,0 +1,34 @@
+{
+  "data": {
+    "dataset_name": "v1_HUC-ALL_W6_L6_1989-2008_WY",
+    "region": "continental_us",
+    "resolution": "monthly_shared_huc_all",
+    "manifest_path": "configs/manifests/us_monthly_huc_all.json"
+  },
+  "task": {
+    "name": "09_run_distributed_baseline",
+    "representation": "distributed",
+    "target": "GloFAS_surrogate_node_and_outlet"
+  },
+  "model": {
+    "name": "gconvlstm_monthly_baseline",
+    "checkpoint": "reference_materials/zenodo/surrogate_distributed/pretrained_monthly_HUC-ALL_epoch256.pt",
+    "notes": "Controlled distributed baseline for outlet and node-level summaries.",
+    "dynamic_group": "era5_core_plus_snow",
+    "loss_name": "hydro_skill",
+    "history_length": 12
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "seed": 42,
+    "compute_budget": "targeted_1_gpu"
+  },
+  "outputs": {
+    "root": "outputs/09_distributed_baseline",
+    "summary_table": "outputs/09_distributed_baseline/us_monthly_distributed_summary.csv"
+  },
+  "rebuttal": {
+    "mode": "aggressive_best_case",
+    "shared_repo_url": "<SHARED_REPO_URL>"
+  }
+}

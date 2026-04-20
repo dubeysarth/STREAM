@@ -1,0 +1,14 @@
+{
+  "dataset_id": "ohio_daily",
+  "adapter": "ohio",
+  "benchmark": {
+    "adapter": "ohio",
+    "experiment_root": "experiments/ohio_daily",
+    "results_root": "results/ohio_daily",
+    "frequency": "daily",
+    "representations": ["lumped", "semidistributed", "distributed"]
+  },
+  "notes": {
+    "description": "Verified Ohio benchmark package promoted into the shared STREAM repo."
+  }
+}

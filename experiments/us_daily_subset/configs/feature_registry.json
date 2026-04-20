@@ -1,0 +1,96 @@
+{
+  "time_encoding_features": [
+    "encoding_solar_insolation",
+    "encoding_sine_month",
+    "encoding_sine_dayofyear",
+    "encoding_sine_weekofyear"
+  ],
+  "dynamic_groups": {
+    "era5_core": [
+      "dynamic_ERA5_total_precipitation",
+      "dynamic_ERA5_potential_evaporation",
+      "dynamic_ERA5_2m_temperature",
+      "dynamic_ERA5_2m_dewpoint_temperature",
+      "dynamic_ERA5_surface_pressure",
+      "dynamic_ERA5_10m_u_component_of_wind",
+      "dynamic_ERA5_10m_v_component_of_wind",
+      "dynamic_ERA5_surface_net_solar_radiation",
+      "dynamic_ERA5_surface_net_thermal_radiation"
+    ],
+    "era5_core_plus_snow": [
+      "dynamic_ERA5_total_precipitation",
+      "dynamic_ERA5_potential_evaporation",
+      "dynamic_ERA5_2m_temperature",
+      "dynamic_ERA5_2m_dewpoint_temperature",
+      "dynamic_ERA5_surface_pressure",
+      "dynamic_ERA5_10m_u_component_of_wind",
+      "dynamic_ERA5_10m_v_component_of_wind",
+      "dynamic_ERA5_surface_net_solar_radiation",
+      "dynamic_ERA5_surface_net_thermal_radiation",
+      "dynamic_ERA5_snow_depth",
+      "dynamic_ERA5_snowfall",
+      "dynamic_ERA5_snowmelt"
+    ],
+    "era5_core_plus_water_balance": [
+      "dynamic_ERA5_total_precipitation",
+      "dynamic_ERA5_potential_evaporation",
+      "dynamic_ERA5_2m_temperature",
+      "dynamic_ERA5_2m_dewpoint_temperature",
+      "dynamic_ERA5_surface_pressure",
+      "dynamic_ERA5_10m_u_component_of_wind",
+      "dynamic_ERA5_10m_v_component_of_wind",
+      "dynamic_ERA5_surface_net_solar_radiation",
+      "dynamic_ERA5_surface_net_thermal_radiation",
+      "dynamic_ERA5_runoff",
+      "dynamic_ERA5_surface_runoff",
+      "dynamic_ERA5_sub_surface_runoff",
+      "dynamic_ERA5_evaporation",
+      "dynamic_ERA5_volumetric_soil_water_layer_1",
+      "dynamic_ERA5_volumetric_soil_water_layer_2",
+      "dynamic_ERA5_volumetric_soil_water_layer_3",
+      "dynamic_ERA5_volumetric_soil_water_layer_4"
+    ],
+    "era5_full_selected": [
+      "dynamic_ERA5_total_precipitation",
+      "dynamic_ERA5_potential_evaporation",
+      "dynamic_ERA5_2m_temperature",
+      "dynamic_ERA5_2m_dewpoint_temperature",
+      "dynamic_ERA5_surface_pressure",
+      "dynamic_ERA5_10m_u_component_of_wind",
+      "dynamic_ERA5_10m_v_component_of_wind",
+      "dynamic_ERA5_surface_net_solar_radiation",
+      "dynamic_ERA5_surface_net_thermal_radiation",
+      "dynamic_ERA5_runoff",
+      "dynamic_ERA5_surface_runoff",
+      "dynamic_ERA5_sub_surface_runoff",
+      "dynamic_ERA5_evaporation",
+      "dynamic_ERA5_volumetric_soil_water_layer_1",
+      "dynamic_ERA5_volumetric_soil_water_layer_2",
+      "dynamic_ERA5_volumetric_soil_water_layer_3",
+      "dynamic_ERA5_volumetric_soil_water_layer_4",
+      "dynamic_ERA5_snow_depth",
+      "dynamic_ERA5_snowfall",
+      "dynamic_ERA5_snowmelt"
+    ]
+  },
+  "static_groups": {
+    "static_base": [],
+    "static_base_plus_human_use": [
+      "human_fracirrigated",
+      "human_fracsealed",
+      "human_fracwater",
+      "human_reservoir_mask",
+      "human_lake_mask",
+      "human_fracgwused",
+      "human_fracncused",
+      "human_dom_mean",
+      "human_dom_std",
+      "human_ene_mean",
+      "human_ene_std",
+      "human_ind_mean",
+      "human_ind_std",
+      "human_liv_mean",
+      "human_liv_std"
+    ]
+  }
+}

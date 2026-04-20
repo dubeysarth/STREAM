@@ -1,0 +1,14 @@
+{
+  "dataset_id": "camels_us_daily",
+  "adapter": "camels_us",
+  "benchmark": {
+    "adapter": "camels_us",
+    "experiment_root": "experiments/us_daily_subset",
+    "results_root": "results/us_daily_subset",
+    "frequency": "daily",
+    "representations": ["lumped", "semidistributed", "distributed"]
+  },
+  "notes": {
+    "description": "Broader CAMELS-US daily benchmark package promoted into the shared STREAM repo."
+  }
+}

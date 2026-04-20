@@ -1,0 +1,31 @@
+{
+  "data": {
+    "dataset_name": "v1_HUC-ALL_W6_L6_1989-2008_WY",
+    "region": "continental_us",
+    "resolution": "monthly_shared_huc_all",
+    "manifest_path": "configs/manifests/us_monthly_huc_all.json"
+  },
+  "task": {
+    "name": "10_run_ablation_suite",
+    "representation": "distributed_control",
+    "target": "GloFAS_surrogate_node_and_outlet"
+  },
+  "model": {
+    "name": "topology_off_control",
+    "checkpoint": "outputs/10_ablation_suite/topology_off.pt",
+    "notes": "Disable meaningful graph connectivity while preserving inputs and splits."
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "seed": 42,
+    "compute_budget": "targeted_1_gpu"
+  },
+  "outputs": {
+    "root": "outputs/10_ablation_suite",
+    "summary_table": "outputs/10_ablation_suite/topology_off_summary.csv"
+  },
+  "rebuttal": {
+    "mode": "aggressive_best_case",
+    "shared_repo_url": "<SHARED_REPO_URL>"
+  }
+}

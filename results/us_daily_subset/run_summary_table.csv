@@ -1,0 +1,3 @@
+RMSE,NSE,PBIAS,KGE,split,run_id,dynamic_group,static_group,loss_name,frequency
+0.953284550437109,0.7708767650723678,9.085443897804415,0.7649775347431352,test,us_daily_lumped_010515_core_hydro_skill_h365_b256,era5_core,static_base,hydro_skill,daily
+1.2139026424442223,0.6352034102701337,23.03348531585436,0.5672283240648758,test,us_daily_semidistributed_010515_core_hydro_skill_h365_gb256,era5_core,static_base,hydro_skill,daily
