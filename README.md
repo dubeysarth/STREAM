@@ -7,6 +7,17 @@ that the curation layer, experiment layer, and reporting layer are all
 inspectable rather than being hidden inside one-off notebooks or private
 preprocessing scripts.
 
+STREAM should be read as a **benchmark, curation, and diagnosis framework**.
+The main contribution is not a bespoke new sequence or graph architecture. The
+contribution is that the same basin can be turned into:
+
+1. a lumped outlet example,
+2. a semi-distributed nested-gauge graph,
+3. a distributed river-network graph,
+
+while reusing the same snapped outlets, maskmaps, flow-direction topology,
+forcing alignment, target definition, and human-context overlays.
+
 ## What this repository contains
 
 - `src/stream/`: the shared STREAM package for snapping, maskmaps, graph
@@ -25,18 +36,7 @@ preprocessing scripts.
 - `tests/`: repo-level smoke tests for the shared `stream` package plus
   experiment-specific tests under each benchmark folder.
 
-## Public position
 
-STREAM should be read as a **benchmark, curation, and diagnosis framework**.
-The main contribution is not a bespoke new sequence or graph architecture. The
-contribution is that the same basin can be turned into:
-
-1. a lumped outlet example,
-2. a semi-distributed nested-gauge graph,
-3. a distributed river-network graph,
-
-while reusing the same snapped outlets, maskmaps, flow-direction topology,
-forcing alignment, target definition, and human-context overlays.
 
 ## Quickstart
 
@@ -48,13 +48,11 @@ git clone <REPO_URL>
 cd STREAM
 conda env create -f environment.yml
 conda activate stream
-export PYTHONPATH=$PWD/src
 ```
 
 For the benchmark workspaces:
 
 ```bash
-export PYTHONPATH=$PWD/experiments/ohio_daily/src:$PWD/experiments/us_daily_subset/src:$PYTHONPATH
 python experiments/ohio_daily/scripts/00_probe_environment.py
 python experiments/us_daily_subset/scripts/01_write_registry.py
 ```
